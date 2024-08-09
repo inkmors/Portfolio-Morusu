@@ -21,7 +21,7 @@ main {
 .title-main {
   font-size: 35px;
   color: white;
-  font-family: "JetBrains Mono";
+  font-family: 'JetBrains Mono', monospace;
   font-weight: 300;
   font-style: normal;
 }
