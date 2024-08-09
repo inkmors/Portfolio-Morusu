@@ -1,0 +1,217 @@
+/*=============================================================================== */
+.project-main{
+    background-color: rgb(21, 22, 26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.5rem;
+    padding: 4rem 4rem;
+    width: 100%;
+}
+
+.project-main h1{
+    color: white;
+    font-size: 45px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.project-main h1 span{
+    color: rgb(255, 174, 0);
+    text-shadow: rgba(255, 136, 0) 0px 1px 15px;
+}
+
+.top-projects,
+.bottom-projects{
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-main p{
+    font-size: 20px;
+}
+
+.align-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.see-more{
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.align-btn-projects{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.molder1,
+.molder2,
+.molder3,
+.molder4,
+.molder5,
+.molder6,
+.molder7,
+.molder8{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 23rem;
+    height: 15rem;
+    border-radius: 15px;
+    background-color: rgb(46, 46, 46);
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+}
+.molder1::after,
+.molder2::after,
+.molder3::after,
+.molder4::after,
+.molder5::after,
+.molder6::after,
+.molder7::after,
+.molder8::after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(0deg, rgba(27, 27, 27, 0.836) 0%, rgba(32, 34, 37, 0) 50%);
+    inset: 0.1px;
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+.molder1{
+    background-image: url("../assets/netflix.png");
+}
+
+.molder2{
+    background-image: url("../assets/bradesco.png");
+}
+
+.molder3{
+    background-image: url("../assets/watch-digital.png");
+}
+
+.molder4{
+    background-image: url("../assets/imc-calculator.PNG");
+}
+
+.molder5{
+    background-image: url("../assets/Jett_Fanart.png");
+    background-position: 0 0.1rem;
+}
+
+.molder6{
+    background-image: url("../assets/Mizuno_Noah.png");
+    background-position: 0 -0.2rem;
+}
+
+.molder7{
+    background-image: url("../assets/CyberGirl.png");
+    background-position: 0rem -0.2rem;
+}
+
+.molder8{
+    background-image: url("../assets/scorn_subway.png");
+}
+
+.molder1:hover,
+.molder2:hover,
+.molder3:hover,
+.molder4:hover,
+.molder5:hover,
+.molder6:hover,
+.molder7:hover,
+.molder8:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.btn-see-more{
+    width: 13rem;
+    height: 3.5rem;
+    background-color: rgb(255, 174, 0);
+    color: white;
+    box-shadow: rgba(255, 136, 0) 0px 1px 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+    font-size: 22px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-see-more:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 174, 0);
+    box-shadow: rgb(255, 255, 255) 0px 1px 15px;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.containner-double-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 1745px){
+    .top-projects,
+    .bottom-projects{
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .containner-double-cards{
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 938px) {
+    .containner-double-cards{
+        flex-direction: column;
+    }
+
+    .project-main h1{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .align-btn-projects{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 474px) {
+    .project-main h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 407px) {
+    .molder1,
+    .molder2,
+    .molder3,
+    .molder4,
+    .molder5,
+    .molder6,
+    .molder7,
+    .molder8{
+        width: 12rem;
+        height: 8rem;
+    }
+
+    .align-projects{
+        text-align: center;
+    }
+}
+

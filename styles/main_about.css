@@ -1,0 +1,155 @@
+/*=============================================================================== */
+.about-main{
+    background-color: rgb(21, 22, 26);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 4em 4em;
+    gap: 30rem;
+}
+
+.about-main h1{
+    color: white;
+    font-size: 60px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.about-main h3{
+    color: white;
+    font-size: 35px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+}
+
+.about-main h3 span,
+.about-main h1 span{
+    color: rgb(255, 174, 0);
+    text-shadow: rgba(255, 136, 0) 0px 1px 15px;
+}
+
+.div-width{
+    width: 54rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 3rem;
+    gap: 2rem;
+}
+
+.align-div-about{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20rem;
+    padding: 2em 2em;
+}
+
+.software-scale{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.software-scale:hover{
+    transition: 0.5s;
+    transform: scale(1.5);
+}
+
+.about-main p{
+    font-size: 23px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    line-height: 35px;
+}
+
+.about-main p:nth-of-type(2){
+    font-size: 26px;
+    color: rgb(255, 174, 0);
+    text-shadow: rgba(255, 136, 0) 0px 1px 15px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+}
+
+.circle-about {
+    background-image: url("../assets/Icon_Samurai_cheio.png");
+    background-position: center;
+    background-size: 110%;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 100%;
+    background-color: rgb(46, 46, 46);
+    box-shadow: rgb(255, 255, 255) 0px 1px 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1886px) {
+    .circle-about{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1052px) {
+    .div-width h3{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 656px) {
+    .div-width p{
+        font-size: 18px;
+    }
+    .div-width h3{
+        font-size: 25px;
+    }
+    .div-width h1{
+        font-size: 30px;
+    }
+    .div-width p:nth-of-type(2){
+        font-size: 20px;
+    }
+    .about-main{
+        padding: 1.5em 1.5em;
+    }
+    .div-width div img{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 469px) {
+    .div-width h3{
+        font-size: 20px;
+    }
+    .div-width{
+        margin: 0 1rem;
+    }
+
+    .about-main{
+        padding: 1em 1em;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .div-width h3{
+        font-size: 22px;
+    }
+   
+    .div-width{
+        margin: 0;
+    }
+
+    .about-main{
+        padding: 1em 1em;
+    }
+
+    .align-div-about{
+        padding: 1em 1em;
+    }
+    .div-width div{
+        display: block;
+        gap: 1rem;
+    }
+}
