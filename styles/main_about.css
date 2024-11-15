@@ -83,7 +83,6 @@
     background-color: rgb(46, 46, 46);
     box-shadow: rgb(255, 255, 255) 0px 1px 15px;
     transition: 0.5s;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 1886px) {
