@@ -74,16 +74,14 @@
 }
 
 .circle-about {
-    background-image: url("../assets/Icon_Samurai_cheio.png");
+    background-image: url("../assets/IMG_0523_1X1.jpg");
     background-position: center;
-    background-size: 110%;
+    background-size: 100%;
     width: 30rem;
     height: 30rem;
     border-radius: 100%;
     background-color: rgb(46, 46, 46);
     box-shadow: rgb(255, 255, 255) 0px 1px 15px;
-    transition: 0.5s;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 1886px) {
