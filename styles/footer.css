@@ -1,0 +1,122 @@
+footer{
+    background-color: rgb(21, 22, 26);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.footer-align{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
+
+.align-name-footer,
+.align-skills-footer{
+    display: flex;
+    align-items: center;
+    color: rgb(172, 172, 172);
+    gap: 1rem;
+}
+
+.align-name-footer a,
+.align-skills-footer a{
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.align-skills-footer a:hover,
+.container-itens a:hover{
+    text-decoration: underline;
+    text-shadow: rgb(255, 255, 255) 0px 1px 15px;
+}
+
+.align-home{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(207, 207, 207);
+    text-shadow: rgb(255, 255, 255) 0px 1px 15px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.align-home a{
+    color: white;
+    text-decoration: none;
+}
+
+.align-home a:hover{
+    text-decoration: underline;
+}
+
+.links-social-medias{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.container-itens{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container-itens a{
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+}
+
+.circle-footer{
+    background-image: url("../assets/Icon_Samurai_cheio.png");
+    background-position: center;
+    background-size: 110%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    background-color: rgb(46, 46, 46);
+    box-shadow: rgb(255, 255, 255) 0px 1px 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.circle-footer:hover{
+    box-shadow: rgb(255, 255, 255) 0px 1px 40px;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1040px) {
+    footer{
+        padding: 2em 2em;
+    }
+    
+    footer hr{
+        width: 100%;
+    }
+    
+    .footer-align{
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .align-skills-footer{
+        display: none;
+    }
+
+    .align-name-footer{
+        flex-direction: column;
+    }
+}

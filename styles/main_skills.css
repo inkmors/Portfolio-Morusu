@@ -1,0 +1,201 @@
+/*=============================================================================== */
+.skills-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding: 2em 2em;
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.skills-main h1{
+    color: white;
+    font-size: 45px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.skills-main h1 span{
+    color: rgb(255, 174, 0);
+    text-shadow: rgba(255, 136, 0) 0px 1px 15px;
+}
+
+.align-skills-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 7rem;
+    padding: 2em 2em;
+}
+
+.title-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+}
+
+.title-card h2{
+    color: white;
+    font-size: 30px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.creative,
+.developer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10rem;
+}
+
+.card-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    background: linear-gradient(0deg, rgb(17, 17, 17) 0%, rgb(32, 34, 37) 100%);
+    background-repeat: no-repeat;
+    width: 25rem;
+    height: 37rem;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1.5em 1.5em;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-skills::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 200%;
+    background: rgb(255, 174, 0);
+    box-shadow: rgba(255, 136, 0) 0px 1px 15px;
+    animation: borderFX 7s linear infinite;
+}
+
+@keyframes borderFX{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.card-skills::after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(0deg, rgb(17, 17, 17) 0%, rgb(32, 34, 37) 100%);
+    background-repeat: no-repeat;
+    inset: 3px;
+    border-radius: inherit;
+}
+
+.card-skills img{
+    position: relative;
+    z-index: 3;
+}
+
+.card-skills h3{
+    font-size: 30px;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+
+.card-skills p{
+    font-size: 16px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    color: white;
+    font-style: normal;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    z-index: 3;
+}
+
+.card-skills a{
+    position: relative;
+    z-index: 3;
+}
+
+.btn-card{
+    width: 8rem;
+    height: 2.8rem;
+    background-color: rgb(255, 174, 0);
+    color: white;
+    box-shadow: rgba(255, 136, 0) 0px 1px 15px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-card:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 174, 0);
+    box-shadow: rgb(255, 255, 255) 0px 1px 15px;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1508px) {
+    .creative,
+    .developer {
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 5rem;
+    }
+    .align-skills-main{
+        padding: 0;
+    }
+
+    .skills-main h1{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 447px) {
+    .skills-main h1{
+        font-size: 20px;
+    }
+
+    .title-card h2{
+        font-size: 22px;
+    }
+
+    .card-skills{
+        width: 20rem;
+        height: 27rem;
+        gap: 1.2rem;
+    }
+
+    .card-skills img{
+        width: 3rem;
+    }
+
+    .card-skills h3{
+        font-size: 20px;
+    }
+
+    .card-skills p{
+        font-size: 12px;
+    }
+
+    .btn-card{
+        width: 7rem;
+        height: 2.5rem;
+    }
+}
