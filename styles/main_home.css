@@ -2,6 +2,7 @@ main {
   margin-bottom: 2rem;
 }
 
+
 .home-main {
   display: flex;
   align-items: center;
@@ -10,6 +11,16 @@ main {
   padding: 3rem 8.5rem;
   margin-bottom: 5rem;
 }
+
+/* .home-main.lightMode{
+  background-color: rgb(206, 206, 206);
+  color: rgb(17, 18, 20);
+}
+
+.home-main.darkMode{
+  background-color: rgb(17, 18, 20);
+  color: white;
+} */
 
 .align-main-left {
   display: flex;
@@ -153,13 +164,11 @@ main {
   }
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1130px) {
   .home-main {
     padding: 0 3rem;
     gap: 5rem;
   }
-
-  ;
 }
 
 @media screen and (max-width: 768px) {

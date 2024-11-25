@@ -7,17 +7,49 @@ const navLinks = document.querySelector('ul');
 const traceBtn = document.querySelectorAll('#trace-btn')
 const roleElement = document.getElementById("span-two-text");
 
+const iconMoon = document.querySelector('#icon-moon');
+const iconSun = document.querySelector('#icon-sun');
+const circleChange = document.querySelector('.circleChange');
+const alignCircleChange = document.querySelector('.alignCircleChange');
+
+const $body = document.querySelector('body');
+
+let LightMode = true;
+
+//alert("Olá tudo bem, a função Light Mode está sendo desenvolvida, mas fique a vontade para ver como está ficando^^")
+circleChange.addEventListener('click', () => {
+  if (LightMode) {
+    circleChange.style.transform = 'translateX(-1.5rem)'; 
+    iconMoon.style.opacity = '0'; 
+    iconSun.style.opacity = '1'; 
+    $body.classList.remove('darkMode');
+    $body.classList.add('lightMode');
+    circleChange.style.backgroundColor = 'white';
+    alignCircleChange.style.backgroundColor = 'rgb(255, 174, 0)';
+  } else {
+    circleChange.style.transform = 'translateX(0)'; 
+    iconMoon.style.opacity = '1';
+    iconSun.style.opacity = '0';
+    $body.classList.remove('lightMode');
+    $body.classList.add('darkMode');
+    circleChange.style.backgroundColor = 'rgb(255, 174, 0)';
+    alignCircleChange.style.backgroundColor = 'white';
+  }
+
+  LightMode = !LightMode; 
+});
+
 burgerBtn.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     burgerBtn.classList.toggle('toggle');
 
     if (burgerBtn.classList.contains('toggle')) {
-      burgerBtn.style.backgroundColor = 'white'; // Mudar a cor do botão quando ativado
+      burgerBtn.style.backgroundColor = 'white'; 
       traceBtn.forEach(function(element){
         element.style.backgroundColor = "#ffae00"
       })
   } else {
-      burgerBtn.style.backgroundColor = ''; // Restaurar a cor original quando desativado
+      burgerBtn.style.backgroundColor = '';
       traceBtn.forEach(function(element){
         element.style.backgroundColor = "white"
       })
@@ -62,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
       typeEffect(roles[currentIndex], () => {
           setTimeout(() => {
               deleteEffect(updateRole);
-          }, 2000); // Espera 2 segundos antes de apagar
+          }, 2000); //2 segundos
       });
   }
 
