@@ -51,20 +51,18 @@ ul {
     gap: 1rem;
 }
 
-ul li {
-    list-style: none;
-}
-
 ul a {
     text-decoration: none;
     color: white;
     font-size: 20px;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 ul a:hover {
     color: rgb(255, 174, 0);
     text-shadow: rgba(255, 136, 0) 0px 1px 15px;
+    transition: 0.4s linear;
+    text-decoration: underline;
 }
 
 .burger-btn {
@@ -80,6 +78,8 @@ ul a:hover {
     flex-direction: column;
     gap: 5px;
     box-shadow: rgba(255, 136, 0) 0px 1px 15px;
+
+    transition: all 0.4s ease;
 }
 
 .burger-btn div {
@@ -87,7 +87,7 @@ ul a:hover {
     height: 4px;
     border-radius: 2px;
     background-color: white;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .divBtnToggle{
@@ -103,7 +103,6 @@ ul a:hover {
     gap: 5rem;    
 }
 
-/* Ícones de sol e lua */
 #icon-sun, #icon-moon {
     width: 1.5rem;
     height: 1.5rem;
@@ -181,11 +180,11 @@ ul a:hover {
         padding: 3em 3em;
         z-index: 2;
         gap: 2.5rem;
-        
         text-align: center;
+        transition: transform 0.4s ease;
     }
 
-    .alignCircleChange{
+    .alignCircleChange,#icon-sun, #icon-moon{
         display: none;
     }
 

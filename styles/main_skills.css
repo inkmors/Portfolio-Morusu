@@ -54,6 +54,12 @@
     gap: 10rem;
 }
 
+.effectInCards, .effectInCards1, .effectInCards2, .effectInCards3,
+.effectInCards4, .effectInCards5, .effectInCards6{
+  visibility: hidden;
+}
+
+
 .card-skills{
     display: flex;
     flex-direction: column;
