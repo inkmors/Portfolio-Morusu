@@ -76,6 +76,7 @@
 .circle-about {
     background-image: url("../assets/MG_0615\(1mb\)1x1.png");
     background-position: center;
+    background-repeat: no-repeat;
     background-size: 100%;
     width: 30rem;
     height: 30rem;
