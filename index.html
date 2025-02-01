@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Portfólio de Vinícius Lima, desenvolvedor full-stack e designer gráfico. Explore projetos, habilidades e entre em contato.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morusu | Portfólio</title>
     <link rel="shortcut icon" href="assets/icons8-código-64.png" type="image/x-icon">
@@ -14,7 +15,7 @@
     <link rel="stylesheet" href="styles/main_contact.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/modeLightDark.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
                     <a href="#contact"><li>Contato</li></a>
                 </ul>
                 
-                <div class="divBtnToggle">
+                <div class="divBtnToggle" aria-label="Alternar modo claro/escuro">
                     <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="rgba(255, 136, 0)" class="bi bi-brightness-high" viewBox="0 0 16 16">
                         <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
                     </svg>
@@ -59,71 +60,72 @@
     <main>
         <section id="home" class="home-main">
             <div class="align-main-left">
-                <div class="title-main effectInText">
-                    <p class="effectInText-one">Olá, me chamo</p>
-                    <h2 class="effectInText-two">Morusu</h2>
-                    <p class="effectInText-three">E sou <span class="color-title" id="span-two-text">Desenvolvedor Full-Stack</span></p>
+                <div class="title-main">
+                    <p data-aos="fade-right">Olá, me chamo</p>
+                    <h2 data-aos="zoom-in">Morusu</h2>
+                    <p data-aos="fade-up-right">E sou <span class="color-title" id="span-two-text">Desenvolvedor Full-Stack</span></p>
                 </div>
 
                 <div class="subdiv-title">
-                    <div class="div-socials effectInSocials">
-                        <div class="circle-btn effectInSocials-one">
+                    <div class="div-socials">
+                        <div class="circle-btn effectInSocials-one" data-aos="zoom-in-right">
                             <a href="https://www.instagram.com/morusu.ink/" target="_blank"><img width="30px" title="Instagram" src="assets/icons8-instagram-48 (1).png" alt="Instagram"></a>
                         </div>
 
-                        <div class="circle-btn effectInSocials-two">
+                        <div class="circle-btn" data-aos="zoom-in-right">
                             <a href="https://www.linkedin.com/in/vin%C3%ADcius-lima-738603284/" target="_blank"><img width="27px" src="assets/icons8-linkedin-50.png" alt="Linkedin" title="Linkedin"></a>
                         </div>
 
-                        <div class="circle-btn effectInSocials-three">
+                        <div class="circle-btn" data-aos="zoom-in-left">
                             <a href="https://www.youtube.com/@morusu_" target="_blank"><img width="30px" src="assets/icons8-youtube-50.png" alt="Youtube" title="Youtube"></a>
                         </div>
 
-                        <div class="circle-btn effectInSocials-four">
+                        <div class="circle-btn" data-aos="zoom-in-left">
                             <a href="https://github.com/inkmors" target="_blank"><img width="35px" src="assets/icons8-github-48.png" alt="Github" title="GitHub"></a>
                         </div>
                     </div>
 
-                    <a href="https://drive.google.com/file/d/1c47xSOMTdDnpH4aBJ5jemDfw3_E0Gvh4/view?usp=sharing"><button type="submit" class="btn-cv">Download CV</button></a>
+                    <a href="https://drive.google.com/file/d/1c47xSOMTdDnpH4aBJ5jemDfw3_E0Gvh4/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a><button type="submit" class="btn-cv">Download CV</button></a>
                 </div>
             </div>
     
-            <div class="circle effectInImg1"></div>
+            <div class="circle" data-aos="flip-right"></div>
         </section>
 
         <section id="about" class="about-main">
             <div class="align-div-about">
                 <div class="div-width">
                     <h1>Sobre <span>Mim</span></h1>
-                    <h3>Programador <span>Full-Stack</span> e Designer <span>Gráfico</span></h3>
-                    <p>Olá, me chamo Vinícius Lima, conhecido como Morusu, tenho 23 anos e faço Análise e Desenvolvimento de Sistemas. Comecei na programação aos 14 anos, estudando C, para servidores de jogos multiplayer. Hoje em dia, atuo como desenvolvedor full-stack e na área criativa, como designer gráfico, ilustrador e animador 2D!!</p>
+                    <h3>Desenvolvedor <span>Full-Stack</span> e Designer <span>Gráfico</span></h3>
+                    <p>Olá, me chamo Vinícius Lima, conhecido como Morusu, tenho 23 anos e curso Análise e Desenvolvimento de Sistemas. Comecei na programação aos 14 anos, estudando C, para servidores de jogos multiplayer. <br><br>Hoje em dia, atuo como desenvolvedor full-stack com foco no front-end e ministrando aulas particulares de programação. Já na área criativa, atuo como designer gráfico, ilustrador e animador 2D!!</p>
                     <p>Linguagens e Softwares</p>
-                    <div>
-                        <img class="software-scale" align="center" alt="Morusu-Js" height="40" width="50"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-                        <img class="software-scale" align="center" alt="Morusu-HTML" height="40" width="50"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-                        <img class="software-scale" align="center" alt="Morusu-CSS" height="40" width="50"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-                        <img class="software-scale" align="center" alt="Morusu-Python" height="40" width="50"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-                        <img class="software-scale" align="center" alt="Morusu-Js" height="40" width="40" src="https://img.icons8.com/fluency/48/c-programming.png"
-                            alt="c-programming">
-                        <img class="software-scale" align="center" alt="Morusu-Lua" width="40" height="40"
-                            src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-lua-is-a-lightweight-multi-paradigm-programming-language-logo-shadow-tal-revivo.png"
-                            alt="external-lua-is-a-lightweight-multi-paradigm-programming-language-logo-shadow-tal-revivo">
-                        <img class="software-scale" align="center" alt="Morusu-Figma" width="40" height="40" src="https://img.icons8.com/color/48/figma--v1.png"
-                            alt="figma--v1">
-                        <img class="software-scale" align="center" alt="Morusu-PS" width="40" height="40"
-                            src="https://img.icons8.com/fluency/48/adobe-photoshop.png" alt="adobe-photoshop">
-                        <img class="software-scale" align="center" alt="Morusu-Ilustrator" width="40" height="40"
-                            src="https://img.icons8.com/color/48/adobe-illustrator--v1.png" alt="adobe-illustrator--v1">
-                        <img class="software-scale" align="center" alt="Morusu-Premiere" width="40" height="40"
-                            src="https://img.icons8.com/color/48/adobe-premiere-pro--v1.png" alt="adobe-premiere-pro--v1">
-                        <img class="software-scale" align="center" alt="Morusu-After" width="40" height="40"
-                            src="https://img.icons8.com/color/48/adobe-after-effects--v1.png" alt="adobe-after-effects--v1">
-                        <img class="software-scale" align="center" alt="Morusu-ClipStudio" width="40" height="40"
-                            src="https://img.icons8.com/nolan/64/clip-studio-paint.png" alt="clip-studio-paint">
+                    <div class="div-softwares">
+                        <img class="software-scale" align="center" alt="Morusu-HTML"width="45"
+                            src="https://skillicons.dev/icons?i=html">
+                        <img class="software-scale" align="center" alt="Morusu-CSS"width="45"
+                            src="https://skillicons.dev/icons?i=css">
+                        <img class="software-scale" align="center" alt="Morusu-JS"width="45"
+                            src="https://skillicons.dev/icons?i=js">
+                        <img class="software-scale" align="center" alt="Morusu-TS"width="45"
+                                src="https://skillicons.dev/icons?i=ts">
+                        <img class="software-scale" align="center" alt="Morusu-Python"width="45"
+                            src="https://skillicons.dev/icons?i=py">
+                        <img class="software-scale" align="center" alt="Morusu-C"width="45" 
+                            src="https://skillicons.dev/icons?i=c" alt="c-programming">    
+                        <img class="software-scale" align="center" alt="Morusu-Node"width="45"
+                            src="https://skillicons.dev/icons?i=nodejs">
+                        <img class="software-scale" align="center" alt="Morusu-React"width="45"
+                            src="https://skillicons.dev/icons?i=react">
+                        <img class="software-scale" align="center" alt="Morusu-Bootstrap" width="45"
+                                src="https://skillicons.dev/icons?i=bootstrap"  alt="bootstrap">
+                        <img class="software-scale" align="center" alt="Morusu-Sqlite" width="45"
+                            src="https://skillicons.dev/icons?i=sqlite">
+                        <img class="software-scale" align="center" alt="Morusu-Figma" width="45" 
+                            src="https://skillicons.dev/icons?i=figma">
+                        <img class="software-scale" align="center" alt="Morusu-PS" width="45"
+                            src="https://skillicons.dev/icons?i=ps">
+                        <img class="software-scale" align="center" alt="Morusu-Ilustrator" width="45"
+                            src="https://skillicons.dev/icons?i=ai">
                     </div>
                 </div>
     
@@ -137,8 +139,8 @@
             <div class="align-skills-main">
                 <div class="title-card">
                     <h2>Criativo</h2>
-                    <div class="creative effectInCards">
-                        <div class="card-skills effectInCards1">
+                    <div class="creative">
+                        <div class="card-skills" data-aos="zoom-in">
                             <img width="70px" src="assets/icons8-pincel-64 (1).png" alt="">
         
                             <h3>Ilustração Digital</h3>
@@ -148,7 +150,7 @@
                             <a href="https://www.artstation.com/morusu" target="_blank"><button class="btn-card">Portfolio</button></a>
                         </div>
         
-                        <div class="card-skills effectInCards2">
+                        <div class="card-skills" data-aos="zoom-in">
                             <img width="70px" src="assets/icons8-design-64.png" alt="">
         
                             <h3>Design Gráfico</h3>
@@ -158,7 +160,7 @@
                             <a href="https://www.behance.net/morusu"><button class="btn-card">Portfolio</button></a>
                         </div>
         
-                        <div class="card-skills effectInCards3">
+                        <div class="card-skills" data-aos="zoom-in">
                             <img width="70px" src="assets/icons8-vídeo-50.png" alt="">
         
                             <h3>Video Maker</h3>
@@ -172,7 +174,7 @@
 
                 <div class="title-card">
                     <h2>Programação</h2>
-                    <div class="developer effectInCards">
+                    <div class="developer" data-aos="zoom-in">
                         <div class="card-skills effectInCards4">
                             <img width="70px" src="assets/icons8-web-design-64.png" alt="">
         
@@ -183,18 +185,18 @@
                             <a href="https://github.com/inkmors"><button class="btn-card">Portfolio</button></a>
                         </div>
     
-                        <div class="card-skills effectInCards5">
+                        <div class="card-skills" data-aos="zoom-in">
                             
                             <img width="70px" src="assets/icons8-código-64.png" alt="">
             
                             <h3>Softwares</h3>
             
-                            <p>Voltado na criação de sistemas, manuntenção dos mesmos ou inovações na área ou para FIVEM. A famosa parte do sistema que funciona “nos bastidores” e não é visível para os usuários finais.</p>
+                            <p>Voltado na criação de sistemas, manuntenção dos mesmos ou inovações e criação de APIs. A famosa parte do sistema que funciona “nos bastidores” e não é visível para os usuários finais.</p>
             
                             <a href="https://github.com/inkmors"><button class="btn-card">Portfolio</button></a>
                         </div>
     
-                        <div class="card-skills effectInCards6">
+                        <div class="card-skills" data-aos="zoom-in">
                             <img width="70px" src="assets/icons8-joystick-96 (1).png" alt="">
         
                             <h3>Game Developer</h3>
@@ -214,14 +216,16 @@
 
             <div class="top-projects">
                 <div class="containner-double-cards">
-                    <div class="align-projects">
+                    <div class="align-projects" data-aos="zoom-in-down"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <a href="https://github.com/inkmors/TeamTrackRH" target="_blank">
                             <div class="molder1"></div>
                         </a>
                         <p>TeamTrack</p>
                     </div>
     
-                    <div class="align-projects">
+                    <div class="align-projects" data-aos="zoom-in-down">
                         <a href="https://inkmors.github.io/Bradesco_Validator/index.html" target="_blank">
                             <div class="molder2"></div>
                         </a>
@@ -229,7 +233,7 @@
                     </div>
                 </div>
 
-                <div class="containner-double-cards">
+                <div class="containner-double-cards" data-aos="zoom-in-down">
                     <div class="align-projects">
                         <a href="https://clone-ui-instagram-psi.vercel.app/" target="_blank">
                             <div class="molder3"></div>
@@ -237,7 +241,9 @@
                         <p>UI Instagram Login</p>
                     </div>
     
-                    <div class="align-projects">
+                    <div class="align-projects" data-aos="zoom-in-down"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <a href="https://zip-code-query.vercel.app/" target="_blank">
                             <div class="molder4"></div>
                         </a>
@@ -247,7 +253,9 @@
             </div>
 
             <div class="bottom-projects">
-                <div class="containner-double-cards">
+                <div class="containner-double-cards" data-aos="zoom-in-up"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <div class="align-projects">
                         <a href="https://www.instagram.com/p/CvIpPCLudrL/?img_index=1" target="_blank">
                             <div class="molder5"></div>
@@ -255,7 +263,7 @@
                         <p>Ilustração Jett (Valorant)</p>
                     </div>
     
-                    <div class="align-projects">
+                    <div class="align-projects" data-aos="zoom-in-up">
                         <a href="https://www.artstation.com/artwork/elGBXZ" target="_blank">
                             <div class="molder6"></div>
                         </a>
@@ -264,14 +272,16 @@
                 </div>
 
                 <div class="containner-double-cards">
-                    <div class="align-projects">
+                    <div class="align-projects" data-aos="zoom-in-up">
                         <a href="https://www.artstation.com/artwork/EvPzYn" target="_blank">
                             <div class="molder7"></div>
                         </a>
                         <p>Ilustração Cybergirl</p>
                     </div>
     
-                    <div class="align-projects">
+                    <div class="align-projects" data-aos="zoom-in-up"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <a href="https://foundation.app/@morusu" target="_blank">
                             <div class="molder8"></div>
                         </a>
@@ -377,6 +387,7 @@
     </footer>
 
     <script src="scripts/main.js"></script>
-    <script src="scripts/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/aos.js"></script>
 </body>
 </html>

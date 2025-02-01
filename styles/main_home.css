@@ -22,11 +22,6 @@ main {
   color: white;
 } */
 
-.effectInText, .effectInText-one, .effectInText-two, .effectInText-three,
-.effectInImg1{
-  visibility: hidden;
-}
-
 .align-main-left {
   display: flex;
   flex-direction: column;
@@ -92,7 +87,7 @@ main {
 }
 
 .circle {
-  background-image: url("../assets/Icon_Samurai_cheio.png");
+  background-image: url("../assets/MG_0615\(1mb\)1x1.png");
   background-position: center;
   background-size: 110%;
   width: 30rem;

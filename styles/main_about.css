@@ -32,7 +32,7 @@
     width: 54rem;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     margin: 0 3rem;
     gap: 2rem;
 }
@@ -74,10 +74,9 @@
 }
 
 .circle-about {
-    background-image: url("../assets/MG_0615\(1mb\)1x1.png");
+    background-image: url("../assets/Icon_Samurai_cheio.png");
     background-position: center;
-    background-size: 100%;
-    background-size: cover;
+    background-size: 110%;
     width: 30rem;
     height: 30rem;
     border-radius: 100%;
@@ -162,8 +161,8 @@
     .align-div-about{
         padding: 1em 1em;
     }
-    .div-width div{
-        display: block;
-        gap: 1rem;
+    .div-softwares{
+        display: flex;
+        gap: 2rem;
     }
 }
