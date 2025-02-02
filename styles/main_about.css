@@ -163,8 +163,4 @@
     .align-div-about{
         padding: 1em 1em;
     }
-    .div-softwares{
-        display: flex;
-        gap: 2rem;
-    }
 }
