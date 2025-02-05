@@ -132,7 +132,7 @@ main {
   animation: floatBtn 2s ease-in-out infinite;
 }
 
-.btn-cv a{
+.anchor-download {
   font-family: "Fjalla One", sans-serif;
   font-size: 18px;
   text-decoration: none;
