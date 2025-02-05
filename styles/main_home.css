@@ -125,13 +125,17 @@ main {
   color: white;
   background-color: rgb(255, 174, 0);
   box-shadow: rgba(255, 136, 0) 0px 1px 15px;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 18px;
   border-radius: 10px;
   transition: 0.5s;
   cursor: pointer;
   transform: translateY(2px);
   animation: floatBtn 2s ease-in-out infinite;
+}
+
+.btn-cv a{
+  font-family: "Fjalla One", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 @keyframes floatBtn {
