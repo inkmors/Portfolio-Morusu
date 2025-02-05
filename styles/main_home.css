@@ -135,6 +135,7 @@ main {
 .anchor-download {
   font-family: "Fjalla One", sans-serif;
   font-size: 18px;
+  font-weight: 700;
   text-decoration: none;
   color: white;
 }
