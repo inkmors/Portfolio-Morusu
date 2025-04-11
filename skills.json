@@ -1,0 +1,18 @@
+{
+    "categories": [
+      {
+        "title": "Frontend",
+        "skills": [
+          { "name": "React", "level": 90 },
+          { "name": "JavaScript", "level": 85 }
+        ]
+      },
+      {
+        "title": "Backend",
+        "skills": [
+          { "name": "Node.js", "level": 85 }
+        ]
+      }
+    ],
+    "otherTechs": ["Next.js", "Redux", "GraphQL"]
+  }

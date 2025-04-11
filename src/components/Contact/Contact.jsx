@@ -1,4 +1,36 @@
+import {  useState } from "react";
+
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const whatsappMessage = `Olá Vinícius! Meu nome é ${formData.name}. ${formData.message} (Contato: ${formData.email})`;
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const phoneNumber = "5571988007359";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
+    
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+  };
+
     return (
       <section id="contact" className="py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-[#1D1D1D] to-[#0a0a0a]">
         <div className="max-w-6xl mx-auto">
@@ -13,14 +45,17 @@ export default function Contact() {
             <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 shadow-lg">
               <h3 className="text-2xl font-bold text-white mb-6">Envie uma mensagem</h3>
               
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-[#6C6C6A] mb-2">Nome</label>
                   <input 
                     type="text" 
                     id="name" 
+                    value={formData.name}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[#f4b315] transition-all"
                     placeholder="Seu nome"
+                    required
                   />
                 </div>
                 
@@ -28,9 +63,12 @@ export default function Contact() {
                   <label htmlFor="email" className="block text-[#6C6C6A] mb-2">Email</label>
                   <input 
                     type="email" 
-                    id="email" 
+                    id="email"
+                    value={formData.email}
+                    onChange={handleChange} 
                     className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[#f4b315] transition-all"
                     placeholder="seu@email.com"
+                    required
                   />
                 </div>
                 
@@ -39,8 +77,11 @@ export default function Contact() {
                   <textarea 
                     id="message" 
                     rows="5"
+                    value={formData.message}
+                    onChange={handleChange}
                     className="resize-none w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[#f4b315] transition-all"
                     placeholder="Sua mensagem..."
+                    required
                   ></textarea>
                 </div>
                 
@@ -53,7 +94,7 @@ export default function Contact() {
               </form>
             </div>
   
-            <div className="space-y-8">
+            <div className="space-y-13">
               <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 shadow-lg">
                 <h3 className="text-2xl font-bold text-white mb-6">Informações de Contato</h3>
                 
