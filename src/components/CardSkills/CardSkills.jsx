@@ -117,10 +117,15 @@ export default function Skills() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            MINHAS <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f4b315] to-[#f4d315]">HABILIDADES</span>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-2 text-center">
+            SKILLS
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#f4b315] to-[#f4d315] mx-auto"></div>
+
+          <p className="text-[#6C6C6A] text-center mb-12 max-w-2xl mx-auto">
+            Algumas das minhas habilidades e conhecimentos em programação.
+          </p>
+
+          <div className="w-24 h-1.5 bg-[#fff1] mx-auto rounded-full"></div>
         </motion.div>
 
         <motion.div
@@ -139,8 +144,8 @@ export default function Skills() {
               viewport={{ once: true, margin: "-50px" }}
               className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 hover:border-[#fff]/30 transition-all hover:shadow-lg hover:shadow-[#fff]/10"
             >
-              <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
-                <span className="w-4 h-4 bg-[#fff] rounded-full mr-3"></span>
+              <h3 className="text-2xl font-bold text-[white] mb-6 flex items-center">
+                <span className="w-4 h-4 bg-[#6C6C6A] rounded-full mr-3"></span>
                 {category.title}
               </h3>
               
@@ -157,7 +162,7 @@ export default function Skills() {
                         whileInView={{ width: `${skill.level}%` }}
                         transition={{ duration: 1, delay: 0.3 + (i * 0.1) }}
                         viewport={{ once: true }}
-                        className="bg-[#fff] h-2 rounded-full"
+                        className="bg-[#FFF] h-2 rounded-full"
                       ></motion.div>
                     </div>
                   </div>

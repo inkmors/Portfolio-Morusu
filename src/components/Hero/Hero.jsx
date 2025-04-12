@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Hero() {
     return (
         <div className="flex justify-center items-center flex-col px-4 py-22">
             <div className="w-full flex flex-col items-center justify-center">

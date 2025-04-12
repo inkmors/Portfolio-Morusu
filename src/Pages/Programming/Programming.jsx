@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 
-import Home from "../../components/Home/Home"
+import Hero from "../../components/Hero/Hero"
 import SkillsSection from '../../components/CardSkills/CardSkills'
 import CardProjects from '../../components/CardProjects/CardProjects'
 import Contact from "../../components/Contact/Contact"
@@ -19,7 +19,7 @@ export default function Programming() {
         <div className="w-full justify-center items-center flex-col bg">
             <video className="absolute z-[-1] opacity-30 w-full h-full object-cover" src="assets/Soft_White_Gradient_Moving_Background.mp4" autoPlay loop muted></video>
             <Header/>
-            <Home/>
+            <Hero/>
             <AboutSection/>
             <SkillsSection />
             <CardProjects />
