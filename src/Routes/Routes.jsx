@@ -11,7 +11,7 @@ export default function RoutesPages() {
             
                 <Routes>
                     <Route path="/" element={<Programming />} />
-                    <Route path="/galery" element={<Creative />} />
+                    <Route path="/creative" element={<Creative />} />
                 
                     <Route path="*" element={<Error />} />
                 </Routes>

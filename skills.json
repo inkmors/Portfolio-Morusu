@@ -3,16 +3,32 @@
       {
         "title": "Frontend",
         "skills": [
-          { "name": "React", "level": 90 },
-          { "name": "JavaScript", "level": 85 }
+            { "name": "HTML5", "level": 100 },
+            { "name": "CSS3", "level": 100 },
+            { "name": "JavaScript", "level": 90 },
+            { "name": "TypeScript", "level": 40 },
+            { "name": "React", "level": 70 },
+            { "name": "Tailwind", "level": 80 }
         ]
       },
       {
         "title": "Backend",
         "skills": [
-          { "name": "Node.js", "level": 85 }
+          { "name": "Python", "level": 90 },
+          { "name": "Node.js", "level": 60 },
+          { "name": "C", "level": 55 },
+          { "name": "Sqlite", "level": 60 }
+        ]
+      },
+      {
+        "title": "Ferramentas",
+        "skills": [
+          { "name": "Git", "level": 90 },
+          { "name": "GitHub", "level": 90 },
+          { "name": "VSCode", "level": 100 },
+          { "name": "Figma", "level": 70 }
         ]
       }
     ],
-    "otherTechs": ["Next.js", "Redux", "GraphQL"]
+    "otherTechs": ["Discord.py", "Vercel", "Bootstrap", "Notion", "Photoshop"]
   }

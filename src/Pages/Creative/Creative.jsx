@@ -677,13 +677,13 @@ export default function Creative() {
                       <button className="px-6 py-2 rounded-full text-white font-medium" style={{ backgroundColor: activeColor }}>
                         Ver Projeto
                       </button>
-                      <button className="px-6 py-2 rounded-full font-medium" style={{ 
+                      {/* <button className="px-6 py-2 rounded-full font-medium" style={{ 
                         color: activeColor,
                         border: `1px solid ${activeColor}`,
                         backgroundColor: `${activeColor}10`
                       }}>
                         Detalhes Técnicos
-                      </button>
+                      </button> */}
                     </div>
                   </div>
                 </motion.div>
@@ -709,7 +709,7 @@ export default function Creative() {
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
       >
-        <span style={{ color: activeColor }}>✧</span> MORUSU CREATIVE
+        <span style={{ color: activeColor }}>✧</span> MORUSU CREATIVE &copy; <span style={{ color: activeColor }}>{ new Date().getFullYear() }</span> 
       </motion.div>
     </div>
   );
