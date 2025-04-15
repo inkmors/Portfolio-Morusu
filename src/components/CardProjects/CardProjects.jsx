@@ -47,7 +47,7 @@ export default function CardProject() {
       <h2 className="text-3xl md:text-5xl font-bold text-white mb-2 text-center">
         PROJETOS
       </h2>
-      <p className="text-[#6C6C6A] text-center mb-12 max-w-2xl mx-auto">
+      <p className="text-[#B6B6B4] text-center mb-12 max-w-2xl mx-auto">
       Alguns dos trabalhos que desenvolvi com dedicação e atenção aos detalhes
       </p>
       <div className="w-24 h-1.5 bg-[#fff1] mx-auto rounded-full mb-15"></div>
@@ -69,12 +69,12 @@ export default function CardProject() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-80"></div>
               <div className="absolute bottom-4 left-4">
                 <h3 className="text-xl font-bold text-white">{project.title}</h3>
-                <p className="text-sm text-[#f4b315]">{project.category}</p>
+                <p className="text-sm text-[#B6B6B4]">{project.category}</p>
               </div>
             </div>
 
             <div className="p-6">
-              <p className="text-[#6C6C6A] mb-4 line-clamp-3">{project.description}</p>
+              <p className="text-[#B6B6B4] mb-4 line-clamp-3">{project.description}</p>
               
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag, i) => (
@@ -92,7 +92,7 @@ export default function CardProject() {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 text-center py-2 text-sm font-medium bg-[#fff] text-[#1D1D1D] hover:bg-[#6C6C6A] transition-colors rounded"
+                  className="flex-1 text-center py-2 text-sm font-medium bg-[#fff] text-[#1D1D1D] hover:bg-[#B6B6B4] transition-colors rounded"
                 >
                   Ver Projeto
                 </a>
@@ -100,7 +100,7 @@ export default function CardProject() {
                   href={project.codeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 text-center py-2 text-sm font-medium border border-[#fff] text-white hover:border-[#6C6C6A] hover:text-[#6C6C6A] transition-colors rounded"
+                  className="flex-1 text-center py-2 text-sm font-medium border border-[#fff] text-white hover:border-[#B6B6B4] hover:text-[#B6B6B4] transition-colors rounded"
                 >
                   Código
                 </a>

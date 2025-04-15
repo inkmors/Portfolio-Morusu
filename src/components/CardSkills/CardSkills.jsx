@@ -68,7 +68,7 @@ export default function Skills() {
           <motion.div
             animate={{ opacity: [0.5, 1, 0.5] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="text-[#f4b315] text-lg"
+            className="text-[#B6B6B4] text-lg"
           >
             Carregando habilidades...
           </motion.div>
@@ -121,7 +121,7 @@ export default function Skills() {
             SKILLS
           </h2>
 
-          <p className="text-[#6C6C6A] text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-[#B6B6B4] text-center mb-12 max-w-2xl mx-auto">
             Algumas das minhas habilidades e conhecimentos em programação.
           </p>
 
@@ -145,7 +145,7 @@ export default function Skills() {
               className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 hover:border-[#fff]/30 transition-all hover:shadow-lg hover:shadow-[#fff]/10"
             >
               <h3 className="text-2xl font-bold text-[white] mb-6 flex items-center">
-                <span className="w-4 h-4 bg-[#6C6C6A] rounded-full mr-3"></span>
+                <span className="w-4 h-4 bg-[#B6B6B4] rounded-full mr-3"></span>
                 {category.title}
               </h3>
               

@@ -12,14 +12,14 @@ export default function Header() {
       <nav className="relative flex w-full mx-4 md:mx-8 lg:mx-[5rem] max-w-[90%] md:max-w-[95rem] items-center flex-wrap justify-between p-4 font-[Mulish] text-[16px] md:text-[18px] h-[6rem]">
 
         <div className="hidden sm:block relative group">
-          <a href="#about" className="hover:text-[#6C6C6A] transition-colors">sobre</a>
+          <a href="#about" className="hover:text-[#B6B6B4] transition-colors">sobre</a>
           <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#fff] transition-all duration-300 group-hover:w-full"></div>
         </div>
         
         <span className="text-[10px] hidden sm:inline">•</span>
 
         <div className="hidden sm:block relative group">
-          <a href="#skills" className="hover:text-[#6C6C6A] transition-colors">skills</a>
+          <a href="#skills" className="hover:text-[#B6B6B4] transition-colors">skills</a>
           <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#fff] transition-all duration-300 group-hover:w-full"></div>
         </div>
         
@@ -27,7 +27,7 @@ export default function Header() {
 
         <div className="flex flex-col items-center z-20">
           <span className="text-[20px] md:text-[24px] font-[1000] text-white">MORUSU</span>
-          <span className="text-[10px] md:text-[12px] font-[JosefinSans] font-[700] text-center tracking-[2px] md:tracking-[4px] text-[#6C6C6A]">
+          <span className="text-[10px] md:text-[12px] font-[JosefinSans] font-[700] text-center tracking-[2px] md:tracking-[4px] text-[#B6B6B4]">
             DEVELOPER
           </span>
         </div>
@@ -35,14 +35,14 @@ export default function Header() {
         <span className="text-[10px] hidden sm:inline">•</span>
 
         <div className="hidden sm:block relative group">
-          <a href="#projects" className="hover:text-[#6C6C6A] transition-colors">projetos</a>
+          <a href="#projects" className="hover:text-[#B6B6B4] transition-colors">projetos</a>
           <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#fff] transition-all duration-300 group-hover:w-full"></div>
         </div>
         
         <span className="text-[10px] hidden sm:inline">•</span>
 
         <div className="hidden sm:block relative group">
-          <a href="#contact" className="hover:text-[#6C6C6A] transition-colors">contato</a>
+          <a href="#contact" className="hover:text-[#B6B6B4] transition-colors">contato</a>
           <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#fff] transition-all duration-300 group-hover:w-full"></div>
         </div>
 

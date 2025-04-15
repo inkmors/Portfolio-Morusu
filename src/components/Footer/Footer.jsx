@@ -7,7 +7,7 @@ export default function Footer() {
                     <div className="flex flex-col items-center md:items-start space-y-4">
                         <div className="flex items-center gap-2">
                             <span className="text-2xl font-bold text-white bg-clip-text bg-gradient-to-r from-[#f4b315] to-[#f4d315]">MORUSU</span>
-                            <span className="text-xs font-semibold tracking-widest text-[#6C6C6A] bg-[#111] px-2 py-1 rounded-full">DEVELOPER</span>
+                            <span className="text-xs font-semibold tracking-widest text-[#B6B6B4] bg-[#111] px-2 py-1 rounded-full">DEVELOPER</span>
                         </div>
                         
                         <div className="flex flex-col items-center md:items-start space-y-1">

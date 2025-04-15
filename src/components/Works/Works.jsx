@@ -14,7 +14,7 @@ export default function Works(){
                     </div>
 
                     <div>
-                        <button className="text-[20px] font-[JosefinSans] font-[300] text-[#1D1D1D] bg-white hover:bg-[#6C6C6A] hover:text-white p-[1rem] rounded-[4px] cursor-pointer mt-[2rem]">PROJETOS</button>
+                        <button className="text-[20px] font-[JosefinSans] font-[300] text-[#1D1D1D] bg-white hover:bg-[#B6B6B4] hover:text-white p-[1rem] rounded-[4px] cursor-pointer mt-[2rem]">PROJETOS</button>
                     </div>
                 </div>
 

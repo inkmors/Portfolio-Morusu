@@ -39,7 +39,7 @@ export default function Contact() {
             CONTATO
           </h2>
 
-          <p className="text-[#6C6C6A] text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-[#B6B6B4] text-center mb-12 max-w-2xl mx-auto">
             Entre em contato comigo para tirar suas dúvidas ou fechar um projeto.
           </p>
 
@@ -52,7 +52,7 @@ export default function Contact() {
               
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
-                  <label htmlFor="name" className="block text-[#6C6C6A] mb-2">Nome</label>
+                  <label htmlFor="name" className="block text-[#B6B6B4] mb-2">Nome</label>
                   <input 
                     type="text" 
                     id="name" 
@@ -65,7 +65,7 @@ export default function Contact() {
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-[#6C6C6A] mb-2">Email</label>
+                  <label htmlFor="email" className="block text-[#B6B6B4] mb-2">Email</label>
                   <input 
                     type="email" 
                     id="email"
@@ -78,7 +78,7 @@ export default function Contact() {
                 </div>
                 
                 <div>
-                  <label htmlFor="message" className="block text-[#6C6C6A] mb-2">Mensagem</label>
+                  <label htmlFor="message" className="block text-[#B6B6B4] mb-2">Mensagem</label>
                   <textarea 
                     id="message" 
                     rows="5"
@@ -111,7 +111,7 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-[#6C6C6A]">Telefone</h4>
+                      <h4 className="text-[#B6B6B4]">Telefone</h4>
                       <p className="text-white">+55 (71) 98800-7359</p>
                     </div>
                   </div>
@@ -124,7 +124,7 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-[#6C6C6A]">Email</h4>
+                      <h4 className="text-[#B6B6B4]">Email</h4>
                       <p className="text-white">gvlima.contato@gmail.com</p>
                     </div>
                   </div>
@@ -137,7 +137,7 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-[#6C6C6A]">Localização</h4>
+                      <h4 className="text-[#B6B6B4]">Localização</h4>
                       <p className="text-white">Bahia, Brasil</p>
                     </div>
                   </div>

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 export default function AboutSection() {
-    const skills = ["JavaScript", "React.js", "Tailwind CSS", "Python"]
+    // const skills = ["JavaScript", "React.js", "Tailwind CSS", "Python"]
     return (
         <section id="about" className="relative py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-[#0a0a0a] to-[#1D1D1D] overflow-hidden">
             <div className="absolute inset-0 opacity-10">
@@ -9,7 +9,6 @@ export default function AboutSection() {
                 <div className="absolute bottom-1/3 right-1/4 w-64 h-64 rounded-full bg-[#fff] mix-blend-overlay blur-3xl animate-float-reverse"></div>
             </div>
             
-
             <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
             <div className="max-w-7xl mx-auto relative">
@@ -23,7 +22,7 @@ export default function AboutSection() {
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-2 text-center">
                         SOBRE <span className="text-[#fff]">MIM</span>
                     </h2>
-                    <p className="text-[#6C6C6A] text-center mb-12 max-w-2xl mx-auto">
+                    <p className="text-[#B6B6B4] text-center mb-12 max-w-2xl mx-auto">
                         Um pouco sobre quem sou eu.
                     </p>
                     <div className="w-24 h-1.5 bg-[#fff1] mx-auto rounded-full"></div>

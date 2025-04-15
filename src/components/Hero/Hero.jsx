@@ -21,7 +21,7 @@ export default function Hero() {
                 </p>
                 </div>
                 
-                <button className="text-lg md:text-xl font-[JosefinSans] font-light text-[#1D1D1D] bg-white hover:bg-[#6C6C6A] hover:text-white px-8 py-3 md:px-10 md:py-4 rounded-sm cursor-pointer mt-12 md:mt-20 transition-colors duration-300">
+                <button className="text-lg md:text-xl font-[JosefinSans] font-light text-[#1D1D1D] bg-white hover:bg-[#B6B6B4] hover:text-white px-8 py-3 md:px-10 md:py-4 rounded-sm cursor-pointer mt-12 md:mt-20 transition-colors duration-300">
                     DOWNLOAD CV
                 </button>
             </div>
