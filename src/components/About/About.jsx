@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export default function AboutSection() {
     const skills = ["JavaScript", "React.js", "Tailwind CSS", "Python"]
     return (
-        <section id="about" className="relative py-28 px-4 md:px-8 lg:px-16 overflow-hidden">
+        <section id="about" className="relative py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-[#0a0a0a] to-[#1D1D1D] overflow-hidden">
             <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-1/4 left-1/4 w-48 h-48 rounded-full bg-[#fff] mix-blend-overlay blur-3xl animate-float"></div>
                 <div className="absolute bottom-1/3 right-1/4 w-64 h-64 rounded-full bg-[#fff] mix-blend-overlay blur-3xl animate-float-reverse"></div>

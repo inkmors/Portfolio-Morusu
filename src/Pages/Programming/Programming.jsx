@@ -16,10 +16,19 @@ export default function Programming() {
       }, []);
     
     return(
-        <div className="w-full justify-center items-center flex-col bg">
-            <video className="absolute z-[-1] opacity-30 w-full h-full object-cover" src="assets/Soft_White_Gradient_Moving_Background.mp4" autoPlay loop muted></video>
-            <Header/>
-            <Hero/>
+        <div className="w-full justify-center items-center flex-col bg relative min-h-screen overflow-hidden">
+    <video 
+        className="fixed z-[-1] opacity-30 min-w-full min-h-full object-cover top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+        src="assets/Soft_White_Gradient_Moving_Background.mp4" 
+        autoPlay 
+        loop 
+        muted
+        playsInline
+        disablePictureInPicture
+        preload="auto"
+    ></video>
+    <Header/>
+    <Hero/>
             <AboutSection/>
             <SkillsSection />
             <CardProjects />

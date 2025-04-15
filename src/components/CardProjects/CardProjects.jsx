@@ -15,16 +15,16 @@ export default function CardProject() {
       title: "Site AngioStar",
       category: "Aplicação Web",
       description: "API completa para e-commerce com autenticação JWT, pagamentos e gestão de produtos.",
-      image: "/assets/projects/ecommerce-api.jpg",
+      image: "/assets/projects/AngioStarSite.png",
       tags: ["React.js", "Vite", "Tailwind CSS"],
-      liveUrl: "#",
+      liveUrl: "https://angiostar.vercel.app/",
       codeUrl: "#"
     },
     {
       title: "StormRiders",
       category: "Aplicação Web",
       description: "Meu portfólio profissional desenvolvido com React e Tailwind CSS, mostrando meus projetos e habilidades.",
-      image: "/assets/projects/portfolio.jpg",
+      image: "/assets/projects/StormRiders.png",
       tags: ["React", "Tailwind CSS", "Framer Motion"],
       liveUrl: "#",
       codeUrl: "#"
@@ -69,7 +69,7 @@ export default function CardProject() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-80"></div>
               <div className="absolute bottom-4 left-4">
                 <h3 className="text-xl font-bold text-white">{project.title}</h3>
-                <p className="text-sm text-[#6C6C6A]">{project.category}</p>
+                <p className="text-sm text-[#f4b315]">{project.category}</p>
               </div>
             </div>
 
