@@ -3,7 +3,9 @@ import { motion } from 'framer-motion';
 export default function AboutSection() {
     // const skills = ["JavaScript", "React.js", "Tailwind CSS", "Python"]
     return (
-        <section id="about" className="relative py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-[#0a0a0a] to-[#1D1D1D] overflow-hidden">
+        <section id="about" className="relative py-20 px-4 md:px-8 lg:px-16 overflow-hidden" style={{
+            background: "linear-gradient(180deg, #0a0a0a 0%, #1D1D1D 100%)"
+        }}>
             <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-1/4 left-1/4 w-48 h-48 rounded-full bg-[#fff] mix-blend-overlay blur-3xl animate-float"></div>
                 <div className="absolute bottom-1/3 right-1/4 w-64 h-64 rounded-full bg-[#fff] mix-blend-overlay blur-3xl animate-float-reverse"></div>
@@ -39,7 +41,7 @@ export default function AboutSection() {
                         <div className="relative group perspective-1000">
                             <div className="w-64 h-64 md:w-100 md:h-100 rounded-2xl overflow-hidden border-2 border-[#f4b315]/30 shadow-2xl relative z-10 transition-all duration-700 group-hover:rotate-y-12">
                                 <img 
-                                    src="/assets/Profile2.png" 
+                                    src="/assets/Profile.png" 
                                     alt="Vinícius Lima" 
                                     className="w-full h-full object-cover transition-all duration-500"
                                 />
@@ -56,8 +58,11 @@ export default function AboutSection() {
                         viewport={{ once: true }}
                         className="w-full lg:w-3/5"
                     >
-                        <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-3xl p-8 md:p-10 border border-white/10 shadow-2xl hover:shadow-[0_20px_50px_rgba(244,_179,_21,_0.1)] transition-all duration-500">
-                            <div className="space-y-6">
+                        <div className="rounded-3xl p-8 md:p-10 border shadow-2xl hover:shadow-[0_20px_50px_rgba(244,_179,_21,_0.1)] transition-all duration-500" style={{
+                            background: "linear-gradient(180deg, #0a0a0a 0%, #1D1D1D 100%)",
+                            borderColor: "rgba(255,255,255,0.1)"
+                        }}>
+                            <div className="flex flex-col gap-6">
                                 <motion.p 
                                     whileHover={{ x: 5 }}
                                     className="text-white text-lg md:text-xl leading-relaxed font-light"

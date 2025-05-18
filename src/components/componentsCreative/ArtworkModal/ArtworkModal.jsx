@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { motion } from 'framer-motion';
 
 export default function ArtworkModal({ selectedArtwork, setSelectedArtwork, activeColor, cursorPos, isMobile }) {
@@ -11,7 +12,11 @@ export default function ArtworkModal({ selectedArtwork, setSelectedArtwork, acti
       className="fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto"
     >
       <motion.div 
-        className="absolute inset-0 bg-black/90 backdrop-blur-lg"
+        className="absolute inset-0"
+        style={{ 
+          backdropFilter: 'blur(4px)', 
+          backgroundColor: 'rgba(0, 0, 0, 0.9)'
+        }}
         onClick={() => setSelectedArtwork(null)}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -27,8 +32,9 @@ export default function ArtworkModal({ selectedArtwork, setSelectedArtwork, acti
         }}
         exit={{ scale: 0.9, opacity: 0 }}
         transition={{ type: "spring", damping: 25, stiffness: 200 }}
-        className="relative max-w-6xl w-full max-h-[90vh] lg:max-h-[80vh] bg-gradient-to-br from-[#1D1D1D] to-[#0a0a0a] rounded-3xl overflow-y-auto border border-white/10 z-10"
+        className="relative max-w-6xl w-full max-h-[90vh] lg:max-h-[80vh] rounded-3xl overflow-y-auto border border-white/10 z-10"
         style={{
+          background: 'linear-gradient(180deg, #0a0a0a 0%, #1D1D1D 100%)',
           borderColor: `${activeColor}30`,
           transform: isMobile ? 'none' : `
             rotateX(${(cursorPos.y - window.innerHeight / 2) / 30}deg)

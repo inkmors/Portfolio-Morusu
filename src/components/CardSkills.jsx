@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
@@ -23,18 +24,18 @@ export default function Skills() {
                 { "name": "HTML5", "level": 95 },
                 { "name": "CSS3", "level": 95 },
                 { "name": "JavaScript", "level": 90 },
-                { "name": "TypeScript", "level": 40 },
-                { "name": "React", "level": 70 },
-                { "name": "Tailwind", "level": 90 }
-            ]
-          },
-          {
+                // { "name": "TypeScript", "level": 40 },
+                { "name": "React", "level": 80 },
+              ]
+            },
+            {
             "title": "Backend",
             "skills": [
               { "name": "Python", "level": 90 },
               { "name": "Node.js", "level": 60 },
-              { "name": "C", "level": 55 },
-              { "name": "Sqlite", "level": 60 }
+              // { "name": "C", "level": 55 },
+              { "name": "Sqlite", "level": 60 },
+              { "name": "Firebase", "level": 80 }
             ]
           },
           {
@@ -47,7 +48,7 @@ export default function Skills() {
             ]
           }
         ],);
-        setOtherTechs(["Discord.py", "Vercel", "Bootstrap", "Notion", "Photoshop"]);
+        setOtherTechs(["Tailwind CSS", "Discord.py", "Vercel", "Bootstrap", "Notion", "Photoshop"]);
       } finally {
         setLoading(false);
       }
@@ -78,7 +79,9 @@ export default function Skills() {
   }
 
   return (
-    <section id="skills" className="relative py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-[#0a0a0a] to-[#1D1D1D] overflow-hidden">
+    <section id="skills" className="relative py-20 px-4 md:px-8 lg:px-16 overflow-hidden" style={{
+      background: "linear-gradient(180deg, #0a0a0a 0%, #1D1D1D 100%)"
+    }}>
       <div className="absolute inset-0 z-0 opacity-20">
         <motion.div
           animate={{
@@ -142,7 +145,12 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true, margin: "-50px" }}
-              className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 hover:border-[#fff]/30 transition-all hover:shadow-lg hover:shadow-[#fff]/10"
+              className="rounded-2xl p-8 hover:border-[#fff]/30 transition-all hover:shadow-lg hover:shadow-[#fff]/10"
+              style={{ 
+                backdropFilter: "blur(10px)",
+                backgroundColor: "rgba(255, 255, 255, 0.05)",
+                border: "1px solid rgba(255, 255, 255, 0.10)" 
+              }}
             >
               <h3 className="text-2xl font-bold text-[white] mb-6 flex items-center">
                 <span className="w-4 h-4 bg-[#B6B6B4] rounded-full mr-3"></span>
@@ -156,7 +164,11 @@ export default function Skills() {
                       <span className="text-white font-medium">{skill.name}</span>
                       <span className="text-[#fff] font-bold">{skill.level}%</span>
                     </div>
-                    <div className="w-full bg-white/10 rounded-full h-2 overflow-hidden">
+                    <div className="w-full rounded-full h-2 overflow-hidden" 
+                    style={{ 
+                      backgroundColor: "rgba(255, 255, 255, 0.1)" 
+                    }}
+                    >
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
@@ -178,7 +190,12 @@ export default function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="mt-16 bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 hover:shadow-lg hover:shadow-[#fff]/10 transition-all"
+            className="mt-16 rounded-2xl p-8 hover:shadow-lg hover:shadow-[#fff]/10 transition-all"
+            style={{
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              border: "1px solid rgba(255, 255, 255, 0.10)",
+              backdropFilter: "blur(10px)"
+            }}
           >
             <h3 className="text-2xl font-bold text-white mb-6 text-center">Outras Tecnologias</h3>
             
@@ -190,7 +207,11 @@ export default function Skills() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                   viewport={{ once: true }}
-                  className="px-4 py-2 bg-[#fff]/10 text-[#fff] rounded-full text-sm font-medium border border-[#fff]/20 hover:bg-[#fff]/20 hover:text-white transition-all cursor-default"
+                  className="px-4 py-2 text-[#fff] rounded-full text-sm font-medium hover:bg-[#fff]/20 hover:text-white transition-all cursor-default"
+                  style={{
+                    backgroundColor: "rgba(255, 255, 255, 0.05)",
+                    border: "1px solid rgba(255, 255, 255, 0.10)"
+                  }}
                   whileHover={{ 
                     y: -3,
                     boxShadow: "0 4px 8px rgba(244, 179, 21, 0.2)"
@@ -202,32 +223,6 @@ export default function Skills() {
             </div>
           </motion.div>
         )}
-      </div>
-
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute rounded-full bg-[#fff] opacity-10"
-            style={{
-              width: Math.random() * 10 + 5 + 'px',
-              height: Math.random() * 10 + 5 + 'px',
-              left: Math.random() * 100 + '%',
-              top: Math.random() * 100 + '%',
-            }}
-            animate={{
-              y: [0, (Math.random() * 100) - 50],
-              x: [0, (Math.random() * 60) - 30],
-              opacity: [0.1, 0.2, 0.1],
-            }}
-            transition={{
-              duration: Math.random() * 20 + 10,
-              repeat: Infinity,
-              repeatType: 'reverse',
-              ease: 'easeInOut'
-            }}
-          />
-        ))}
       </div>
     </section>
   );

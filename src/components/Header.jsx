@@ -25,7 +25,7 @@ export default function Header() {
         
         <span className="text-[10px] hidden sm:inline">•</span>
 
-        <div className="flex flex-col items-center z-20">
+        <div className="flex flex-col items-center z-21">
           <span className="text-[20px] md:text-[24px] font-[1000] text-white">MORUSU</span>
           <span className="text-[10px] md:text-[12px] font-[JosefinSans] font-[700] text-center tracking-[2px] md:tracking-[4px] text-[#B6B6B4]">
             DEVELOPER
@@ -47,7 +47,7 @@ export default function Header() {
         </div>
 
         <button 
-          className="sm:hidden flex flex-col justify-center items-center z-20"
+          className="sm:hidden flex flex-col justify-center items-center z-21"
           onClick={toggleMenu}
           aria-label="Menu"
         >
@@ -57,7 +57,7 @@ export default function Header() {
         </button>
 
         {isMenuOpen && (
-          <div className="fixed inset-0 bg-[#0a0a0a] bg-opacity-95 z-10 flex flex-col items-center justify-center space-y-8">
+          <div className="fixed inset-0 bg-[#0a0a0a] bg-opacity-95 z-20 flex flex-col items-center justify-center gap-9">
             <div className="relative group">
               <a 
                 href="#about" 
@@ -87,6 +87,17 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 projetos
+              </a>
+              <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#fff] transition-all duration-300 group-hover:w-full"></div>
+            </div>
+
+            <div className="relative group">
+              <a 
+                href="#projects" 
+                className="text-2xl text-white hover:text-[#fff] transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Morusu Creative
               </a>
               <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#fff] transition-all duration-300 group-hover:w-full"></div>
             </div>
