@@ -24,8 +24,7 @@ export default function Skills() {
                 { "name": "HTML5", "level": 95 },
                 { "name": "CSS3", "level": 95 },
                 { "name": "JavaScript", "level": 90 },
-                // { "name": "TypeScript", "level": 40 },
-                { "name": "React", "level": 80 },
+                { "name": "React", "level": 80 }
               ]
             },
             {
@@ -33,7 +32,6 @@ export default function Skills() {
             "skills": [
               { "name": "Python", "level": 90 },
               { "name": "Node.js", "level": 60 },
-              // { "name": "C", "level": 55 },
               { "name": "Sqlite", "level": 60 },
               { "name": "Firebase", "level": 80 }
             ]

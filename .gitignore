@@ -9,7 +9,7 @@ lerna-debug.log*
 
 node_modules
 # src/components/CreativeCTA.jsx
-.env
+# .env
 
 dist
 dist-ssr
