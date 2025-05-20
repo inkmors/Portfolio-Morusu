@@ -44,8 +44,11 @@ export default function ArtworkModal({ selectedArtwork, setSelectedArtwork, acti
       >
         <button 
           onClick={() => setSelectedArtwork(null)}
-          className="absolute top-4 right-4 z-10 text-white hover:text-[#fff] transition-colors bg-black/50 rounded-full p-2 backdrop-blur-sm"
-          style={{ border: `1px solid ${activeColor}50` }}
+          className="absolute top-4 right-4 z-10 text-white hover:text-[#fff] transition-colors rounded-full p-2 backdrop-blur-sm"
+          style={{ 
+            border: `1px solid ${activeColor}50`, 
+            backgroundColor: 'rgba(0, 0, 0, 0.5)'
+          }}
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
