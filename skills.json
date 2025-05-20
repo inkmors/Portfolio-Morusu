@@ -6,7 +6,8 @@
             { "name": "HTML5", "level": 95 },
             { "name": "CSS3", "level": 95 },
             { "name": "JavaScript", "level": 90 },
-            { "name": "React", "level": 70 }
+            { "name": "React", "level": 70 },
+            { "name": "Tailwind", "level": 80 }
         ]
       },
       {
@@ -29,5 +30,5 @@
         ]
       }
     ],
-    "otherTechs": ["Tailwind CSS", "Discord.py", "Vercel", "Bootstrap", "Notion", "Photoshop"]
+    "otherTechs": ["Discord.py", "Vercel", "Bootstrap", "Notion", "Photoshop"]
   }

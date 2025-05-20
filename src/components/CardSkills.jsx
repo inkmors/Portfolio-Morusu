@@ -24,7 +24,8 @@ export default function Skills() {
                 { "name": "HTML5", "level": 95 },
                 { "name": "CSS3", "level": 95 },
                 { "name": "JavaScript", "level": 90 },
-                { "name": "React", "level": 80 }
+                { "name": "React", "level": 80 },
+                { "name": "Tailwind", "level": 80 }
               ]
             },
             {
@@ -46,7 +47,7 @@ export default function Skills() {
             ]
           }
         ],);
-        setOtherTechs(["Tailwind CSS", "Discord.py", "Vercel", "Bootstrap", "Notion", "Photoshop"]);
+        setOtherTechs(["Discord.py", "Vercel", "Bootstrap", "Notion", "Photoshop"]);
       } finally {
         setLoading(false);
       }
