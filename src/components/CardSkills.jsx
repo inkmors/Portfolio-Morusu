@@ -10,7 +10,7 @@ export default function Skills() {
   useEffect(() => {
     const fetchSkills = async () => {
       try {
-        const response = await fetch('https://raw.githubusercontent.com/inkmors/PortfolioMorusu/main/skills.json');
+        const response = await fetch('https://github.com/inkmors/PortfolioMorusu/blob/main/skills.json');
         const data = await response.json();
         
         setSkillCategories(data.categories || []);
